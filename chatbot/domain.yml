@@ -1,0 +1,78 @@
+version: "3.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - informal_greeting
+  - thanks
+  - functions_of_bot
+  - servicedomain
+  - Que_about_scale
+  - CompanyDomain
+  - contact_info
+  - can_you_helpme
+  - wanna_talk_to_team
+  - company_size
+  - aks_bot_abilities
+
+
+entities:
+- domain
+- contact_detail
+- companysize
+- abilities
+
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_function:
+    - text: "I am bot can perform many functions"
+
+  utter_informalgreet:
+    - text: "Good evening, everything good What about you"
+
+  utter_ans_of_que:
+    - text: "Yes we can work for any scale of company"
+
+  utter_que_domain:
+    - text: "sure my company working for this domain"
+
+  utter_contact_details:
+    - text: "Sure here details email - XXXXXXXX@gmail.com Contact number - XXXXXXXXXX"
+
+  Utter_company_size:
+    - text: "Yes our company works for any size of company"
+
+  utter_bot_abilities:
+    - text: "I am capable to assist you in All domains Ex. I can book a ticket for you"
+
+  
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

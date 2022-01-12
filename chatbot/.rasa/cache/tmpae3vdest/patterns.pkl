@@ -1,0 +1,6 @@
+[
+  {
+    "name": "domain_entities",
+    "pattern": "(\\blead\\ generation\\b|\\bcustomer\\ support\\b|\\btelecommunication\\b|\\bbanking\\b|\\bagriculture\\b|\\bhealthcare\\b|\\bhospitality\\b|\\bagricultural\\ product\\b|\\becommerce\\b|\\bsales\\b|\\bmarketing\\b|\\bsales\\ marketing\\b|\\bIT\\b|\\buser\\ onboarding\\b)"
+  }
+]

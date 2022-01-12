@@ -1,0 +1,36 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-contact_entities",
+      "2": "I-contact_entities",
+      "3": "L-contact_entities",
+      "4": "U-contact_entities",
+      "5": "B-domain",
+      "6": "I-domain",
+      "7": "L-domain",
+      "8": "U-domain",
+      "9": "B-domain_entities",
+      "10": "I-domain_entities",
+      "11": "L-domain_entities",
+      "12": "U-domain_entities",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-contact_entities": 1,
+      "I-contact_entities": 2,
+      "L-contact_entities": 3,
+      "U-contact_entities": 4,
+      "B-domain": 5,
+      "I-domain": 6,
+      "L-domain": 7,
+      "U-domain": 8,
+      "B-domain_entities": 9,
+      "I-domain_entities": 10,
+      "L-domain_entities": 11,
+      "U-domain_entities": 12,
+      "O": 0
+    },
+    "num_tags": 13
+  }
+]

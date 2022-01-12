@@ -1,0 +1,365 @@
+version: "3.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - Hello my friend
+    - hi friend
+    - Hey friend
+    - Hello Mate!
+    - Hello my dear friend!
+    - Good Morning!
+    - Good Evening!
+
+- intent: informal_greeting
+  examples: |
+    - How you doin
+    - what is up
+    - wassup
+    - How's your day
+    - How are you doing
+    - How is everything going on?
+    - How are you
+    - hey whats going on
+    - How was your day
+    - What's happening
+    - Hey how are you
+    - Hello how are you
+    - how are you recently !
+    - How is your day going?
+    - how are things going
+    - How are you today?
+    - What is going on, go on!
+    - How have you been
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - Goodbye
+    - see you
+    - see you soon
+    - Tata
+    - see ya
+    - au revoir
+    - take care
+    - have a good day
+    - good bye
+    - Gotta go
+    - Asta la vista
+    - thank you good bye
+    - Adios
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - yep
+    - yeh
+    - indeed
+    - exactly
+    - that sounds good
+    - correct
+    - Cool!
+    - sure
+    - perfect
+    - alright
+    - I'd say yes
+    - correct
+    - um yeh
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - nope
+    - no i am not
+    - nay
+    - nono
+    - nah
+    - Not at all
+    - Not possible
+    - I'd say so
+    - no nothing else
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - your work is to the point
+    - Dude you are smart!
+    - I appreciate that
+    - that's great.
+    - You are right
+    - You got that right mate.
+    - Its so convenient talking to you.
+    - You are supernatural!
+    - You're so great.
+    - Outstanding
+    - Fantastic
+    - you are on point
+    - spot on
+    - Bravo
+    - its good to see how easily you handle things
+    - You are so fast in resolving my queries... I am amazed!
+    - Awesome
+    - Amazing
+    - appreciate it!
+    - well done
+    - good job
+    - You're so great.
+    - Dude you are smart!
+    - You got that right mate.
+    - You are my best friend
+    - great work
+    - superb
+    - I'm happy with that
+    - you are so Awesome !
+    - You are very cool!
+    - thats great
+    - you are always right
+    - You are so nice.
+
+- intent: thanks
+  examples: |
+    - thanks a ton
+    - I appreciate that
+    - thanks a lot
+    - thnx
+    - thanks
+    - thanks very much
+    - thank you very much
+    - tysm
+    - thanks for help
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: aks_bot_abilities
+  examples: |
+    - tell me your [capabilities]{"entity": "abilities"}
+    - I would like to know more about your [capabilities]{"entity": "abilities"}
+    - what are your [superpowers]{"entity": "abilities"}?
+    - What are your [capabilities]{"entity": "abilities"}?
+    - brief me about your [abilities]{"entity": "abilities"}
+    - would love to know your [capabilities]{"entity": "abilities"}
+    - What are your [capabilities]{"entity": "abilities"}?
+    - tell me about your [capabilities]{"entity": "abilities"}
+
+- intent: functions_of_bot
+  examples: |
+    - What else can you do?
+    - what are you capable of
+    - what can you do to help me?
+    - what are the areas in which you provide service
+    - What's your skill?
+    - How can you be of my help?
+    - for what purpose you are made
+    - tell me everything that you can do
+    - so tell me things which you can do
+    - What is your purpose?
+    - What can you do for me?
+    - tell me what can you do?
+    - what can you do
+    - Please let me know what can you do for me?
+    - please provide me a brief information about all your domains
+    - How can you help me?
+    - What all can you do?
+    - What are the things that you can do for me
+    - What can you do for me?
+    - Which all things are you programmed for
+    - I need to know how you can help me out
+    - Please tell me how you can help me
+    - Tell me things you are programmed to do?
+    - how can you serve me?
+    - How are you useful to me
+    - What are the things you can help me with
+    - How can you solve my problem
+
+- intent: servicedomain
+  examples: |
+    - Do you provide service in [agriculture]{"entity": "domain"}domain.
+    - Can you provide me help in [lead generation]{"entity": "domain"}?
+    - Do you provide assistance in [lead generation]{"entity": "domain"}?
+    - could you help me assist in [lead generation]{"entity": "domain"}?
+    - Do you provide service in [healthcare]{"entity": "domain"}
+    - Let me know if you guys work for [banking]{"entity": "domain"}.
+    - Do you make bots for [telecommunication]{"entity": "domain"} domain?
+    - Could you help me assist in [customer support]{"entity": "domain"}?
+    - Do you provide assistance in [customer support]{"entity": "domain"}?
+    - Do you provide service in [hospitality]{"entity": "domain"} 
+    - I am looking for a sales and [marketing]{"entity": "domain"} chatbot.
+    - Do you provide assistance in [sales marketing]{"entity": "domain"}?
+    - could you help me assist in [sales marketing]{"entity": "domain"}?
+    - do you provide services for [sales marketing]{"entity": "domain"}?
+    - Can you provide me help in [sales marketing]{"entity": "domain"}?
+    - Do you work on [sales marketing]{"entity": "domain"}?
+    - could you help me assist in   [user onboarding]{"entity": "domain"}?
+    - How can you help me in [user onboarding]{"entity": "domain"}?
+    - Do you work in [user onboarding]{"entity": "domain"}?
+    
+
+- intent: Que_about_scale
+  examples: |
+    - I am a startup having 20 employees. Does your company collaborate in such cases?
+    - Do you pick companies based on their scales?
+    - Which scaled enterprizes do you provide your services?
+
+- intent: company_size
+  examples: |
+    - Had Saarthi ever coordinated with [mid sized]{"entity": "companysize"} companies? 
+    - I have a [small]{"entity": "companysize"} food delivery business in my region, can you help me with that
+    - Do you offer your serices to [medium]{"entity": "companysize"} sized enterprises?
+    - I have a [small]{"entity": "companysize"} scale business need your help to grow it further
+    - Is there any chance of a [small]{"entity": "companysize"} sized buisiness being served by your company?
+    - Can i know the [size]{"entity": "companysize"} of businesses you guys support 
+    - if you serve [medium]{"entity": "companysize"} scale businesses then we can talk further
+    - I'm a [small]{"entity": "companysize"} shop owner.. can you help me
+    - Do you work for only [high scaled]{"entity": "companysize"} businesses?
+    - Do you serve [small]{"entity": "companysize"} scale businesses?
+    - Which [size]{"entity": "companysize"} of enterprises do you serve usually?
+
+- intent: CompanyDomain
+  examples: |
+    - My company works for ecommerce. Do you provide services in this domain?
+    - Can i get a list of all the domains that you are involved in
+    - What domain is your company currently working for?
+    - what all kind of enterprise functions you guys provide?
+    - any specific domain that is the motto of your company.
+    - Is there any specific domain you are active in?
+    - What kind of enterprizes do you have worked with till now?
+    - I am from IT do you have experience in this domain
+    
+- intent: contact_info
+  examples: |
+    - Show me [contact]{"entity":"contact_detail"} details
+    - tell me your [email address]{"entity":"contact_detail"}
+    - Show me [contact number]{"entity":"contact_detail"}.
+    - Can you share with me [contact number]{"entity":"contact_detail"}
+    - Give your [mail id]{"entity":"contact_detail"} details?
+    - Your [contact]{"entity":"contact_detail"} details?
+    - How can I reach out over [e-mail]{"entity":"contact_detail"}
+    - I have a requirement and want [contact detail]{"entity":"contact_detail"}
+
+- intent: wanna_talk_to_team
+  examples: |
+    - How can I speak with the team
+    - How can I meet with the team.
+    - Can I talk to someone over a call
+    - Can i get in contact with the customer support 
+    - I need to quickly connect over phone can you share number
+    
+
+- intent: can_you_helpme
+  examples: |
+    - You can solve my problem!
+    - how can you solve my problem?
+    - can you solve my problem?
+    - can you help me?
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- synonym: domain_entities
+  examples:
+    -lead generation
+    -customer support
+    -telecommunication 
+    -banking
+    -agriculture
+    -healthcare
+    -hospitality
+    -agricultural product
+    -ecommerce
+    -sales
+    -marketing
+    -sales marketing
+    -user onboarding
+
+- synonym: contact_entities
+  examples:
+    -contact
+    -number
+    -contact number
+    -contact detail
+    -e-mail
+    -mail id
+    -email address
+
+- synonym: size_entities
+  examples:
+    -medium
+    -small
+    -large
+    -size
+    -high scaled
+    -mid sized
+
+- synonym: abilities_entities
+  examples:
+    -capabilities
+    -abilities
+    -superpowers
+
+
+

@@ -1,0 +1,6 @@
+{
+  "lead generation -customer support -telecommunication -banking -agriculture -healthcare -hospitality -agricultural product -ecommerce -sales -marketing -sales marketing -user onboarding": "domain_entities",
+  "contact -number -contact number -contact detail -e-mail -mail id -email address": "contact_entities",
+  "medium -small -large -size -high scaled -mid sized": "size_entities",
+  "capabilities -abilities -superpowers": "abilities_entities"
+}

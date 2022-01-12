@@ -1,0 +1,71 @@
+version: "3.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+
+- story: test bot 1
+  steps:
+  - intent: informal_greeting
+  - action: utter_informalgreet
+  - intent: functions_of_bot
+  - action: utter_function
+  - intent: mood_great
+  - action: utter_happy
+  - intent: servicedomain
+    entities:
+     - domain: "domain_entities"
+  - action: utter_que_domain
+
+- story: contact_dtls
+  steps:
+  - intent: contact_info
+    entities:
+     - contact_detail: "contact_entities"
+  - action: utter_contact_details
+
+- story: company_sz
+  steps:
+  - intent: company_size
+    entities:
+    - companysize: "size_entities"
+  - action: Utter_company_size
+
+
+- story: bot_abilities
+  steps:
+  - intent: aks_bot_abilities
+    entities:
+    - abilities: "abilities_entities"
+  - action: utter_bot_abilities
+
+
+  
+
+

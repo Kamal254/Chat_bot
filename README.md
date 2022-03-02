@@ -65,7 +65,8 @@ There are many files generated after initialising Rasa. I only used few of them
   - cd rasa
   - rasa train
   - rasa shell
-  Now we are ready to chat with our chat bot
+
+*Now we are ready to chat with our chat bot*
   
 
   
